@@ -1,0 +1,819 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 61 | SCRIPTS: 8 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.bh \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["DisplayOrder"] = 100
+UI["1"]["Name"] = [[bh]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+UI["1"]["ResetOnSpawn"] = false
+
+-- // StarterGui.bh.bhbutton \\ --
+UI["2"] = Instance.new("TextButton", UI["1"])
+UI["2"]["TextWrapped"] = true
+UI["2"]["TextStrokeTransparency"] = 0
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["TextSize"] = 38
+UI["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["TextScaled"] = true
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 128)
+UI["2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2"]["ZIndex"] = 15
+UI["2"]["Size"] = UDim2.new(0.05063, 0, 0.09744, 0)
+UI["2"]["Name"] = [[bhbutton]]
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Text"] = [[black hole]]
+UI["2"]["Visible"] = false
+UI["2"]["Position"] = UDim2.new(0.08097, 0, 0.02924, 0)
+
+-- // StarterGui.bh.bhbutton.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
+UI["3"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.bh.bhbutton.infolocalscript \\ --
+UI["4"] = Instance.new("LocalScript", UI["2"])
+UI["4"]["Name"] = [[infolocalscript]]
+
+-- // StarterGui.bh.bhbutton.UIAspectRatioConstraint \\ --
+UI["5"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["5"]["AspectRatio"] = 1.00465
+
+-- // StarterGui.bh.bh \\ --
+UI["6"] = Instance.new("Frame", UI["1"])
+UI["6"]["Active"] = true
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 128)
+UI["6"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["6"]["Size"] = UDim2.new(0.61917, 0, 0.63563, 0)
+UI["6"]["Position"] = UDim2.new(0.49933, 0, 0.5, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["Name"] = [[bh]]
+UI["6"]["LayoutOrder"] = 1
+
+-- // StarterGui.bh.bh.UICorner \\ --
+UI["7"] = Instance.new("UICorner", UI["6"])
+UI["7"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.bh.bh.UIStroke \\ --
+UI["8"] = Instance.new("UIStroke", UI["6"])
+UI["8"]["Thickness"] = 5
+
+-- // StarterGui.bh.bh.x btn \\ --
+UI["9"] = Instance.new("TextButton", UI["6"])
+UI["9"]["TextWrapped"] = true
+UI["9"]["TextStrokeTransparency"] = -5
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["TextSize"] = 51
+UI["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9"]["TextScaled"] = true
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(255, 3, 7)
+UI["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["9"]["Size"] = UDim2.new(0.08562, 0, 0.15924, 0)
+UI["9"]["Name"] = [[x btn]]
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["Text"] = [[X]]
+UI["9"]["Position"] = UDim2.new(0.89555, 0, 0.03524, 0)
+
+-- // StarterGui.bh.bh.x btn.x infolocalscript \\ --
+UI["a"] = Instance.new("LocalScript", UI["9"])
+UI["a"]["Name"] = [[x infolocalscript]]
+
+-- // StarterGui.bh.bh.x btn.UICorner \\ --
+UI["b"] = Instance.new("UICorner", UI["9"])
+UI["b"]["CornerRadius"] = UDim.new(0, 500)
+
+-- // StarterGui.bh.bh.x btn.UIAspectRatioConstraint \\ --
+UI["c"] = Instance.new("UIAspectRatioConstraint", UI["9"])
+UI["c"]["AspectRatio"] = 1.07634
+
+-- // StarterGui.bh.bh.divider \\ --
+UI["d"] = Instance.new("Frame", UI["6"])
+UI["d"]["BorderSizePixel"] = 2
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Size"] = UDim2.new(1, 0, 0.00318, 0)
+UI["d"]["Position"] = UDim2.new(0, 0, 0.21975, 0)
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Name"] = [[divider]]
+
+-- // StarterGui.bh.bh.divider.UIAspectRatioConstraint \\ --
+UI["e"] = Instance.new("UIAspectRatioConstraint", UI["d"])
+UI["e"]["AspectRatio"] = 591.42999
+
+-- // StarterGui.bh.bh.tiletext \\ --
+UI["f"] = Instance.new("TextLabel", UI["6"])
+UI["f"]["TextWrapped"] = true
+UI["f"]["TextStrokeTransparency"] = -1
+UI["f"]["BorderSizePixel"] = 0
+UI["f"]["TextScaled"] = true
+UI["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f"]["TextSize"] = 50
+UI["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["f"]["TextColor3"] = Color3.fromRGB(253, 253, 253)
+UI["f"]["BackgroundTransparency"] = 1
+UI["f"]["Size"] = UDim2.new(0.41087, 0, 0.15924, 0)
+UI["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f"]["Text"] = [[| black hole]]
+UI["f"]["Name"] = [[tiletext]]
+UI["f"]["Position"] = UDim2.new(0.39992, 0, 0.02532, 0)
+
+-- // StarterGui.bh.bh.tiletext.UICorner \\ --
+UI["10"] = Instance.new("UICorner", UI["f"])
+UI["10"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.bh.bh.UIAspectRatioConstraint \\ --
+UI["11"] = Instance.new("UIAspectRatioConstraint", UI["6"])
+UI["11"]["AspectRatio"] = 1.88354
+
+-- // StarterGui.bh.bh.tile \\ --
+UI["12"] = Instance.new("ImageLabel", UI["6"])
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12"]["Image"] = [[rbxassetid://11489066329]]
+UI["12"]["Size"] = UDim2.new(0.08116, 0, 0.15287, 0)
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Name"] = [[tile]]
+UI["12"]["Position"] = UDim2.new(0.78961, 0, 0.03185, 0)
+
+-- // StarterGui.bh.bh.tile.UICorner \\ --
+UI["13"] = Instance.new("UICorner", UI["12"])
+
+
+-- // StarterGui.bh.bh.huboverlay \\ --
+UI["14"] = Instance.new("Frame", UI["6"])
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["14"]["Size"] = UDim2.new(0.16908, 0, 0.31847, 0)
+UI["14"]["Position"] = UDim2.new(0.08792, 0, -0.13057, 0)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Name"] = [[huboverlay]]
+UI["14"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.bh.bh.huboverlay.UIAspectRatioConstraint \\ --
+UI["15"] = Instance.new("UIAspectRatioConstraint", UI["14"])
+
+
+-- // StarterGui.bh.bh.huboverlay.interval \\ --
+UI["16"] = Instance.new("TextBox", UI["14"])
+UI["16"]["TextStrokeTransparency"] = 0
+UI["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["16"]["BorderSizePixel"] = 0
+UI["16"]["TextWrapped"] = true
+UI["16"]["TextSize"] = 14
+UI["16"]["Name"] = [[interval]]
+UI["16"]["TextScaled"] = true
+UI["16"]["BackgroundColor3"] = Color3.fromRGB(51, 183, 82)
+UI["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["16"]["Size"] = UDim2.new(0.52419, 0, 0.52419, 0)
+UI["16"]["Position"] = UDim2.new(0.16645, 0, 1.7479, 0)
+UI["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["16"]["Text"] = [[10]]
+
+-- // StarterGui.bh.bh.huboverlay.interval.UICorner \\ --
+UI["17"] = Instance.new("UICorner", UI["16"])
+
+
+-- // StarterGui.bh.bh.huboverlay.interval.UIAspectRatioConstraint \\ --
+UI["18"] = Instance.new("UIAspectRatioConstraint", UI["16"])
+
+
+-- // StarterGui.bh.bh.huboverlay.label \\ --
+UI["19"] = Instance.new("TextLabel", UI["14"])
+UI["19"]["TextWrapped"] = true
+UI["19"]["TextStrokeTransparency"] = 0
+UI["19"]["BorderSizePixel"] = 0
+UI["19"]["TextScaled"] = true
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["TextSize"] = 14
+UI["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["BackgroundTransparency"] = 1
+UI["19"]["Size"] = UDim2.new(0.81009, 0, 0.9421, 0)
+UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["Text"] = [[Interval for updating unanchored parts. (lower causes lag if there are too many unanchored parts, can be changed while script is running)]]
+UI["19"]["Name"] = [[label]]
+UI["19"]["Position"] = UDim2.new(0.01781, 0, 2.2679, 0)
+
+-- // StarterGui.bh.bh.huboverlay.stop \\ --
+UI["1a"] = Instance.new("TextButton", UI["14"])
+UI["1a"]["TextWrapped"] = true
+UI["1a"]["TextStrokeTransparency"] = 0
+UI["1a"]["BorderSizePixel"] = 0
+UI["1a"]["TextSize"] = 14
+UI["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1a"]["TextScaled"] = true
+UI["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 3, 7)
+UI["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1a"]["Size"] = UDim2.new(1.63548, 0, 0.47177, 0)
+UI["1a"]["Name"] = [[stop]]
+UI["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1a"]["Text"] = [[Stop Script]]
+UI["1a"]["Visible"] = false
+UI["1a"]["Position"] = UDim2.new(2.108, 0, 1.772, 0)
+
+-- // StarterGui.bh.bh.huboverlay.stop.UICorner \\ --
+UI["1b"] = Instance.new("UICorner", UI["1a"])
+
+
+-- // StarterGui.bh.bh.huboverlay.stop.LocalScript \\ --
+UI["1c"] = Instance.new("LocalScript", UI["1a"])
+
+
+-- // StarterGui.bh.bh.huboverlay.stop.UIAspectRatioConstraint \\ --
+UI["1d"] = Instance.new("UIAspectRatioConstraint", UI["1a"])
+UI["1d"]["AspectRatio"] = 3.46667
+
+-- // StarterGui.bh.bh.huboverlay.mobileplaceholder \\ --
+UI["1e"] = Instance.new("TextLabel", UI["14"])
+UI["1e"]["TextWrapped"] = true
+UI["1e"]["TextStrokeTransparency"] = 0
+UI["1e"]["BorderSizePixel"] = 0
+UI["1e"]["TextScaled"] = true
+UI["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 3, 7)
+UI["1e"]["TextSize"] = 14
+UI["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1e"]["Size"] = UDim2.new(0.52419, 0, 0.52419, 0)
+UI["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1e"]["Text"] = [[No]]
+UI["1e"]["Name"] = [[mobileplaceholder]]
+UI["1e"]["Position"] = UDim2.new(1.19081, 0, 1.7479, 0)
+
+-- // StarterGui.bh.bh.huboverlay.mobileplaceholder.UICorner \\ --
+UI["1f"] = Instance.new("UICorner", UI["1e"])
+
+
+-- // StarterGui.bh.bh.huboverlay.label \\ --
+UI["20"] = Instance.new("TextLabel", UI["14"])
+UI["20"]["TextWrapped"] = true
+UI["20"]["TextStrokeTransparency"] = 0
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["TextScaled"] = true
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["20"]["TextSize"] = 14
+UI["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["20"]["BackgroundTransparency"] = 1
+UI["20"]["Size"] = UDim2.new(1.15677, 0, 0.88419, 0)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["Text"] = [[Button for moving blackhole (mobile)]]
+UI["20"]["Name"] = [[label]]
+UI["20"]["Position"] = UDim2.new(0.87452, 0, 2.32081, 0)
+
+-- // StarterGui.bh.bh.huboverlay.mobileon \\ --
+UI["21"] = Instance.new("TextButton", UI["14"])
+UI["21"]["BorderSizePixel"] = 0
+UI["21"]["TextSize"] = 14
+UI["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["21"]["Size"] = UDim2.new(0.52419, 0, 0.52419, 0)
+UI["21"]["BackgroundTransparency"] = 1
+UI["21"]["Name"] = [[mobileon]]
+UI["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["21"]["Text"] = [[]]
+UI["21"]["Position"] = UDim2.new(1.191, 0, 1.748, 0)
+
+-- // StarterGui.bh.bh.huboverlay.mobileon.LocalScript \\ --
+UI["22"] = Instance.new("LocalScript", UI["21"])
+
+
+-- // StarterGui.bh.bh.huboverlay.mobileon.UIAspectRatioConstraint \\ --
+UI["23"] = Instance.new("UIAspectRatioConstraint", UI["21"])
+
+
+-- // StarterGui.bh.bh.huboverlay.run \\ --
+UI["24"] = Instance.new("TextButton", UI["14"])
+UI["24"]["TextWrapped"] = true
+UI["24"]["TextStrokeTransparency"] = 0
+UI["24"]["BorderSizePixel"] = 0
+UI["24"]["TextSize"] = 14
+UI["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["24"]["TextScaled"] = true
+UI["24"]["BackgroundColor3"] = Color3.fromRGB(51, 183, 82)
+UI["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["24"]["Size"] = UDim2.new(1.63548, 0, 0.47177, 0)
+UI["24"]["Name"] = [[run]]
+UI["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["24"]["Text"] = [[Run Script]]
+UI["24"]["Position"] = UDim2.new(2.108, 0, 1.772, 0)
+
+-- // StarterGui.bh.bh.huboverlay.run.UICorner \\ --
+UI["25"] = Instance.new("UICorner", UI["24"])
+
+
+-- // StarterGui.bh.bh.huboverlay.run.LocalScript \\ --
+UI["26"] = Instance.new("LocalScript", UI["24"])
+
+
+-- // StarterGui.bh.bh.huboverlay.run.UIAspectRatioConstraint \\ --
+UI["27"] = Instance.new("UIAspectRatioConstraint", UI["24"])
+UI["27"]["AspectRatio"] = 3.46667
+
+-- // StarterGui.bh.bh.huboverlay.TextLabel \\ --
+UI["28"] = Instance.new("TextLabel", UI["14"])
+UI["28"]["TextWrapped"] = true
+UI["28"]["TextStrokeTransparency"] = 0
+UI["28"]["BorderSizePixel"] = 0
+UI["28"]["TextScaled"] = true
+UI["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["TextSize"] = 14
+UI["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["28"]["TextColor3"] = Color3.fromRGB(253, 253, 253)
+UI["28"]["BackgroundTransparency"] = 1
+UI["28"]["Size"] = UDim2.new(1.64548, 0, 0.23065, 0)
+UI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["28"]["Text"] = [[controls for pc: "Q" - delete black hole (or just click stop script) ]]
+UI["28"]["Position"] = UDim2.new(2.108, 0, 2.26597, 0)
+
+-- // StarterGui.bh.bh.huboverlay.TextLabel \\ --
+UI["29"] = Instance.new("TextLabel", UI["14"])
+UI["29"]["TextWrapped"] = true
+UI["29"]["TextStrokeTransparency"] = 0
+UI["29"]["BorderSizePixel"] = 0
+UI["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["29"]["TextSize"] = 14
+UI["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["29"]["TextColor3"] = Color3.fromRGB(253, 253, 253)
+UI["29"]["BackgroundTransparency"] = 1
+UI["29"]["Size"] = UDim2.new(2.09677, 0, 0.23065, 0)
+UI["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["29"]["Text"] = [["E" - move/create black hole]]
+UI["29"]["Position"] = UDim2.new(1.8871, 0, 2.49661, 0)
+
+-- // StarterGui.bh.bh.huboverlay.mobileoff \\ --
+UI["2a"] = Instance.new("TextButton", UI["14"])
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["TextSize"] = 14
+UI["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2a"]["Size"] = UDim2.new(0.52419, 0, 0.52419, 0)
+UI["2a"]["BackgroundTransparency"] = 1
+UI["2a"]["Name"] = [[mobileoff]]
+UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Text"] = [[]]
+UI["2a"]["Visible"] = false
+UI["2a"]["Position"] = UDim2.new(1.191, 0, 1.748, 0)
+
+-- // StarterGui.bh.bh.huboverlay.mobileoff.UIAspectRatioConstraint \\ --
+UI["2b"] = Instance.new("UIAspectRatioConstraint", UI["2a"])
+
+
+-- // StarterGui.bh.bh.huboverlay.mobileoff.mobileon \\ --
+UI["2c"] = Instance.new("LocalScript", UI["2a"])
+UI["2c"]["Name"] = [[mobileon]]
+
+-- // StarterGui.bh.bh.huboverlay.collision \\ --
+UI["2d"] = Instance.new("TextBox", UI["14"])
+UI["2d"]["CursorPosition"] = -1
+UI["2d"]["TextStrokeTransparency"] = 0
+UI["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["BorderSizePixel"] = 0
+UI["2d"]["TextWrapped"] = true
+UI["2d"]["TextSize"] = 14
+UI["2d"]["Name"] = [[collision]]
+UI["2d"]["TextScaled"] = true
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(51, 183, 82)
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["2d"]["Size"] = UDim2.new(1.43355, 0, 0.52419, 0)
+UI["2d"]["Position"] = UDim2.new(4.08645, 0, 1.7479, 0)
+UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Text"] = [[true]]
+
+-- // StarterGui.bh.bh.huboverlay.collision.UICorner \\ --
+UI["2e"] = Instance.new("UICorner", UI["2d"])
+
+
+-- // StarterGui.bh.bh.huboverlay.collision.UIAspectRatioConstraint \\ --
+UI["2f"] = Instance.new("UIAspectRatioConstraint", UI["2d"])
+UI["2f"]["AspectRatio"] = 2.73477
+
+-- // StarterGui.bh.bh.huboverlay.label \\ --
+UI["30"] = Instance.new("TextLabel", UI["14"])
+UI["30"]["TextWrapped"] = true
+UI["30"]["TextStrokeTransparency"] = 0
+UI["30"]["BorderSizePixel"] = 0
+UI["30"]["TextScaled"] = true
+UI["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["30"]["TextSize"] = 14
+UI["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["30"]["BackgroundTransparency"] = 1
+UI["30"]["Size"] = UDim2.new(1.43355, 0, 0.78419, 0)
+UI["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["30"]["Text"] = [["true" or "false"               collision for the parts being sucked into the blackhole. (can be also changed while script is running)]]
+UI["30"]["Name"] = [[label]]
+UI["30"]["Position"] = UDim2.new(4.08645, 0, 2.32081, 0)
+
+-- // StarterGui.bh.bh.hubbtn \\ --
+UI["31"] = Instance.new("TextButton", UI["6"])
+UI["31"]["TextWrapped"] = true
+UI["31"]["TextStrokeTransparency"] = 0
+UI["31"]["BorderSizePixel"] = 0
+UI["31"]["TextSize"] = 25
+UI["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["31"]["TextScaled"] = true
+UI["31"]["BackgroundColor3"] = Color3.fromRGB(51, 183, 82)
+UI["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["31"]["Size"] = UDim2.new(0.14452, 0, 0.11783, 0)
+UI["31"]["Name"] = [[hubbtn]]
+UI["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["31"]["Text"] = [[main]]
+UI["31"]["Position"] = UDim2.new(0.02926, 0, 0.05818, 0)
+
+-- // StarterGui.bh.bh.hubbtn.UICorner \\ --
+UI["32"] = Instance.new("UICorner", UI["31"])
+
+
+-- // StarterGui.bh.bh.hubbtn.hubbuttonscrip \\ --
+UI["33"] = Instance.new("LocalScript", UI["31"])
+UI["33"]["Name"] = [[hubbuttonscrip]]
+
+-- // StarterGui.bh.bh.hubbtn.UIAspectRatioConstraint \\ --
+UI["34"] = Instance.new("UIAspectRatioConstraint", UI["31"])
+UI["34"]["AspectRatio"] = 2.31016
+
+-- // StarterGui.bh.bh.TextLabel \\ --
+UI["35"] = Instance.new("TextLabel", UI["6"])
+UI["35"]["TextWrapped"] = true
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["TextScaled"] = true
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 101, 50)
+UI["35"]["TextSize"] = 14
+UI["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Size"] = UDim2.new(0.37989, 0, 0.26407, 0)
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Text"] = [[note: this is a modified script of the infinite yield blackhole plugin. credits to the creator of the actual script, i just modified it to work properly.]]
+UI["35"]["Position"] = UDim2.new(0.30943, 0, 0.79567, 0)
+
+-- // StarterGui.bh.bh.TextLabel.UICorner \\ --
+UI["36"] = Instance.new("UICorner", UI["35"])
+
+
+-- // StarterGui.bh.bh.TextLabel.UIAspectRatioConstraint \\ --
+UI["37"] = Instance.new("UIAspectRatioConstraint", UI["35"])
+UI["37"]["AspectRatio"] = 4
+
+-- // StarterGui.bh.movehole \\ --
+UI["38"] = Instance.new("Frame", UI["1"])
+UI["38"]["Visible"] = false
+UI["38"]["ZIndex"] = 0
+UI["38"]["BorderSizePixel"] = 0
+UI["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["38"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["38"]["Size"] = UDim2.new(0.10469, 0, 0.21222, 0)
+UI["38"]["Position"] = UDim2.new(0.499, 0, -0.1, 0)
+UI["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["38"]["Name"] = [[movehole]]
+UI["38"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.bh.movehole.TextButton \\ --
+UI["39"] = Instance.new("TextButton", UI["38"])
+UI["39"]["TextWrapped"] = true
+UI["39"]["BorderSizePixel"] = 0
+UI["39"]["TextSize"] = 14
+UI["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["TextScaled"] = true
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(51, 183, 82)
+UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["39"]["Size"] = UDim2.new(0.5, 0, 0.5, 0)
+UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["Text"] = [[Create or move blackhole]]
+UI["39"]["Position"] = UDim2.new(0.25, 0, 3.07, 0)
+
+-- // StarterGui.bh.movehole.TextButton.UICorner \\ --
+UI["3a"] = Instance.new("UICorner", UI["39"])
+
+
+-- // StarterGui.bh.movehole.TextButton.LocalScript \\ --
+UI["3b"] = Instance.new("LocalScript", UI["39"])
+
+
+-- // StarterGui.bh.movehole.TextButton.UIAspectRatioConstraint \\ --
+UI["3c"] = Instance.new("UIAspectRatioConstraint", UI["39"])
+
+
+-- // StarterGui.bh.movehole.UIAspectRatioConstraint \\ --
+UI["3d"] = Instance.new("UIAspectRatioConstraint", UI["38"])
+
+
+-- // StarterGui.bh.bhbutton.infolocalscript \\ --
+local function SCRIPT_4()
+	local script = UI["4"]
+	script.Parent.MouseButton1Down:Connect(function()
+		local SoundService = game:GetService("SoundService")
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://179235828"
+		sound.Volume = 5 -- adjust the volume value between 0 and 1
+
+		local success, errorMessage = pcall(function()
+			SoundService:PlayLocalSound(sound)
+		end)
+
+		if not success then
+			print("Error playing sound:", errorMessage)
+		end
+		script.Parent.Parent.bh.Visible = true
+		script.Parent.Visible = false
+	end)
+
+end
+task.spawn(SCRIPT_4)
+-- // StarterGui.bh.bh.x btn.x infolocalscript \\ --
+local function SCRIPT_a()
+	local script = UI["a"]
+	script.Parent.MouseButton1Down:Connect(function()
+		local SoundService = game:GetService("SoundService")
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://179235828"
+		sound.Volume = 5 -- adjust the volume value between 0 and 1
+
+		local success, errorMessage = pcall(function()
+			SoundService:PlayLocalSound(sound)
+		end)
+
+		if not success then
+			print("Error playing sound:", errorMessage)
+		end
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.bhbutton.Visible = true
+	end)
+
+end
+task.spawn(SCRIPT_a)
+-- // StarterGui.bh.bh.huboverlay.stop.LocalScript \\ --
+local function SCRIPT_1c()
+	local script = UI["1c"]
+	local VirtualInputManager = game:GetService("VirtualInputManager")
+
+	local function pressQKey()
+		-- Simulate a key press event for the "E" key
+		VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Q, false, nil)
+		wait(0.1) -- wait for 0.1 seconds
+		VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Q, false, nil)
+
+	end
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.run.Visible = true
+		pressQKey()
+	end)
+end
+task.spawn(SCRIPT_1c)
+-- // StarterGui.bh.bh.huboverlay.mobileon.LocalScript \\ --
+local function SCRIPT_22()
+	local script = UI["22"]
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.mobileplaceholder.Text = "Yes"
+		script.Parent.Parent.mobileplaceholder.BackgroundColor3 = Color3.new(0.196078, 0.713725, 0.317647)
+		script.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.movehole.Visible = true
+		script.Parent.Parent.mobileoff.Visible = true
+	end)
+end
+task.spawn(SCRIPT_22)
+--// StarterGui.bh.bh.huboverlay.run.LocalScript \\ --
+local function SCRIPT_26()
+	local script = UI["26"]
+	local interval = script.Parent.Parent.interval
+
+	local function runhole()
+		local breakLoop = false
+		local UserInputService = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local Workspace = game:GetService("Workspace")
+		local StarterGui = game:GetService("StarterGui")
+		local LocalPlayer = Players.LocalPlayer
+		local Mouse = LocalPlayer:GetMouse()
+		local blackHole = nil
+		local Attachment1 = Instance.new("Attachment")
+		Attachment1.Name = "BlackHoleAttachment" -- Custom name for the first attachment
+		local BLACK_HOLE_SIZE = Vector3.new(5, 5, 5)
+		local BLACK_HOLE_COLOR = Color3.new(0, 1, 1)
+		local BLACK_HOLE_GLOW_RANGE = 10
+		local BLACK_HOLE_GLOW_BRIGHTNESS = 5
+		local TORQUE_VECTOR = Vector3.new(1000, 1000, 1000)
+		local ALIGN_POSITION_RESPONSIVENESS = 200
+		local inputActive = true
+		local connections = {}
+		local colission2 = script.Parent.Parent.collision
+
+		local function applyForceToPart(part)
+			if part:IsA("BasePart") and not part.Anchored and not part.Parent:FindFirstChildOfClass("Humanoid") and part.Name ~= "Handle" and part.Parent ~= LocalPlayer.Character then
+				-- Check if the part already has an attachment with the custom name
+				if part:FindFirstChild("PartAttachment") then
+					return -- Skip this part if it already has the attachment
+				end
+
+				for _, child in ipairs(part:GetChildren()) do
+					if child:IsA("BodyMover") or child:IsA("RocketPropulsion") then
+						child:Destroy()
+					end
+				end
+				local colission = tostring(colission2.Text) -- initialize with current value
+				local alignPosition = part:FindFirstChild("AlignPosition")
+				if alignPosition then alignPosition:Destroy() end
+
+				local torque = part:FindFirstChild("Torque")
+				if torque then torque:Destroy() end
+
+				local Attachment2 = Instance.new("Attachment", part)
+				Attachment2.Name = "PartAttachment" -- Custom name for the second attachment
+				local Torque = Instance.new("Torque", part)
+				Torque.Torque = TORQUE_VECTOR
+				Torque.Attachment0 = Attachment2
+
+				local AlignPosition = Instance.new("AlignPosition", part)
+				AlignPosition.MaxForce = math.huge
+				AlignPosition.MaxVelocity = math.huge
+				AlignPosition.Responsiveness = ALIGN_POSITION_RESPONSIVENESS
+				AlignPosition.Attachment0 = Attachment2
+				AlignPosition.Attachment1 = Attachment1
+				part.CanCollide = colission:lower() == "true"
+			end
+		end
+
+		local function createOrMoveBlackHole(position)
+			if blackHole then
+				blackHole.Position = position
+				return
+			end
+
+			local Folder = Instance.new("Folder", Workspace)
+			Folder.Name = "theholeisfunny"
+
+			blackHole = Instance.new("Part", Folder)
+			blackHole.Size = BLACK_HOLE_SIZE
+			blackHole.Shape = Enum.PartType.Ball
+			blackHole.Color = BLACK_HOLE_COLOR
+			blackHole.Anchored = true
+			blackHole.CanCollide = false
+			blackHole.Material = Enum.Material.Neon
+			blackHole.Position = position
+
+			local Glow = Instance.new("PointLight", blackHole)
+			Glow.Color = BLACK_HOLE_COLOR
+			Glow.Range = BLACK_HOLE_GLOW_RANGE
+			Glow.Brightness = BLACK_HOLE_GLOW_BRIGHTNESS
+
+			local BillboardGui = Instance.new("BillboardGui", blackHole)
+			BillboardGui.Size = UDim2.new(0, 100, 0, 50)
+			BillboardGui.AlwaysOnTop = true
+			local TextLabel = Instance.new("TextLabel", BillboardGui)
+			TextLabel.Size = UDim2.new(1, 0, 1, 0)
+			TextLabel.Text = "da hole"
+			TextLabel.Font = "Nunito"
+			TextLabel.TextStrokeTransparency = 0
+			TextLabel.TextColor3 = Color3.new(1, 1, 1)
+			TextLabel.BackgroundTransparency = 1
+			TextLabel.TextScaled = true
+
+			Attachment1.Parent = blackHole
+			Attachment1.Position = Vector3.new(0, 0, 0)
+
+			local intervalValue = tonumber(interval.Text) -- initialize with current value
+
+			while true do
+				if breakLoop then
+					break
+				end
+				for _, v in ipairs(Workspace:GetDescendants()) do
+					applyForceToPart(v)
+				end
+				-- update intervalValue with the current text value
+				intervalValue = tonumber(interval.Text)
+				wait(intervalValue)
+			end
+
+			table.insert(connections, Workspace.DescendantAdded:Connect(function(v)
+				applyForceToPart(v)
+			end))
+		end
+
+		local function cleanup()
+			breakLoop = true
+			if blackHole then
+				blackHole:Destroy()
+				blackHole = nil
+			end
+			for _, connection in ipairs(connections) do
+				connection:Disconnect()
+			end
+			local theholeisfunny = game.Workspace.theholeisfunny
+			theholeisfunny:Destroy()
+			inputActive = false
+			local connections = {}
+			StarterGui:SetCore("SendNotification", {
+				Title = "Black Hole",
+				Text = "Black hole and script removed.",
+				Duration = 2
+			})
+
+			-- Remove all AlignPosition, Torque, and Attachment instances
+			for _, obj in ipairs(Workspace:GetDescendants()) do
+				if obj:IsA("AlignPosition") or obj:IsA("Torque") or obj:IsA("Attachment") then
+					obj:Destroy()
+				end
+			end
+		end
+
+		local function onInputBegan(input, gameProcessedEvent)
+			if breakLoop then return end
+			if not inputActive then return end
+			if input.KeyCode == Enum.KeyCode.E and not gameProcessedEvent then
+				local position = Mouse.Hit.p
+				createOrMoveBlackHole(position)
+
+				StarterGui:SetCore("SendNotification", {
+					Title = "Black Hole",
+					Text = "Black hole created or moved, or removed successfully",
+					Duration = 2
+				})
+
+			elseif input.KeyCode == Enum.KeyCode.Q and not gameProcessedEvent then
+				cleanup()
+			end
+		end
+
+		local function initializeScript()
+			table.insert(connections, UserInputService.InputBegan:Connect(onInputBegan))
+
+			StarterGui:SetCore("SendNotification", {
+				Title = "if you are on pc click E to move/create blackhole",
+				Text = "if on mobile click the button in the middle of the screen to move/create black hole",
+				Duration = 5
+			})
+		end
+		initializeScript()
+	end
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.stop.Visible = true
+		runhole()
+	end)
+end
+task.spawn(SCRIPT_26)
+-- // StarterGui.bh.bh.huboverlay.mobileoff.mobileon \\ --
+local function SCRIPT_2c()
+	local script = UI["2c"]
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.mobileplaceholder.Text = "No"
+		script.Parent.Parent.mobileplaceholder.BackgroundColor3 = Color3.new(1, 0.00784314, 0.0235294)
+		script.Parent.Parent.Parent.Parent.movehole.Visible = false
+		script.Parent.Parent.mobileon.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+task.spawn(SCRIPT_2c)
+-- // StarterGui.bh.bh.hubbtn.hubbuttonscrip \\ --
+local function SCRIPT_33()
+	local script = UI["33"]
+	script.Parent.MouseButton1Down:Connect(function()
+		local SoundService = game:GetService("SoundService")
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://179235828"
+		sound.Volume = 5 -- adjust the volume value between 0 and 1
+
+		local success, errorMessage = pcall(function()
+			SoundService:PlayLocalSound(sound)
+		end)
+
+		if not success then
+			print("Error playing sound:", errorMessage)
+		end
+		script.Parent.Parent.huboverlay.Visible = true
+		script.Parent.BackgroundColor3 = Color3.new(0.196078, 0.713725, 0.317647)
+	end)
+end
+task.spawn(SCRIPT_33)
+-- // StarterGui.bh.movehole.TextButton.LocalScript \\ --
+local function SCRIPT_3b()
+	local script = UI["3b"]
+	local VirtualInputManager = game:GetService("VirtualInputManager")
+
+	script.Parent.Draggable = true
+
+	local function pressEKey()
+		VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, nil)
+		wait(0.25)
+		VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, nil)
+
+	end
+
+
+	script.Parent.MouseButton1Down:Connect(function()
+		pressEKey()
+	end)
+
+end
+task.spawn(SCRIPT_3b)
+
+return UI["1"], require;
